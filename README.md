@@ -10,12 +10,12 @@
    > npm install
 
 3. 运行项目
-  > npm start
+   > npm start
 4. 打开http://localhost:8080
 
 ## 打包命令
 1. windows:
-  > npm run win-build
+   > npm run win-build
 
 2. 非windows: 
-  > npm run build
+   > npm run build
