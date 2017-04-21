@@ -8,9 +8,9 @@
   "scripts": {
     "start": "node server.js",
     "prod-start": "NODE_ENV=production node server.js",
-    "win-prod-start": "set NODE_ENV=production node server.js",
+    "win-prod-start": "set NODE_ENV=production && node server.js",
     "build": "NODE_ENV=production webpack --verbose --display-error-details --progress --config ./config/prod.webpack.config.js",
-    "win-build": "set NODE_ENV=production webpack --verbose --display-error-details --progress --config ./config/prod.webpack.config.js"
+    "win-build": "set NODE_ENV=production && webpack --verbose --display-error-details --progress --config ./config/prod.webpack.config.js"
   },
   "dependencies": {
     "errorhandler": "^1.5.0",
