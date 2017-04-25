@@ -23,9 +23,9 @@ const About = () => (
   </Bundle>
 )
 
-const Topics = (match) => (
+const Topics = (props) => (
   <Bundle load={loadTopics}>
-    {(Topics) => <Topics match={match} />}
+    {(Topics) => <Topics props={props} />}
   </Bundle>
 )
 
