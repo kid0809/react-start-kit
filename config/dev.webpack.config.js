@@ -11,18 +11,17 @@ module.exports = {
   entry: {
     vendor: ['react', 'react-dom', 'react-router-dom'],
     style: [
-      'webpack-hot-middleware/client',
+      'webpack-hot-middleware/client', // 在scss入口先添加热加载
       './src/style/main.scss'
     ],
     components: [
-      'webpack-hot-middleware/client',
+      'webpack-hot-middleware/client', // 在主逻辑入口先添加热加载
       './src/App.js'
     ]
   },
   output: {
     path: path.resolve(__dirname, '../bundle'),
     filename: '[name].js',
-    chunkFilename: '[name].chunk.js',
     publicPath: '/bundle/',
     sourceMapFilename: 'map/[file].map'
   },
@@ -58,7 +57,6 @@ module.exports = {
             options: {
               plugins: function () {
                 return [
-                  require('precss'),
                   require('autoprefixer')
                 ]
               }
@@ -83,7 +81,6 @@ module.exports = {
             options: {
               plugins: function () {
                 return [
-                  require('precss'),
                   require('autoprefixer')
                 ]
               }

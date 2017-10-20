@@ -18,7 +18,6 @@ module.exports = {
   output: {
     path: path.resolve(__dirname, '../bundle'),
     filename: '[name].js',
-    chunkFilename: '[name].chunk.js',
     publicPath: '/bundle/',
     sourceMapFilename: 'map/[file].map'
   },
@@ -54,7 +53,6 @@ module.exports = {
             options: {
               plugins: function () {
                 return [
-                  require('precss'),
                   require('autoprefixer')
                 ]
               }
@@ -79,7 +77,6 @@ module.exports = {
             options: {
               plugins: function () {
                 return [
-                  require('precss'),
                   require('autoprefixer')
                 ]
               }

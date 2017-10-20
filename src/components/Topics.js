@@ -4,7 +4,7 @@ import {
   Link
 } from 'react-router-dom'
 
-const Topics = ({ props }) => {
+const Topics = (props) => {
   return (
     <div>
       <h2>Topics</h2>
