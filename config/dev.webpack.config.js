@@ -2,7 +2,7 @@ var path         = require('path');
 var webpack      = require('webpack');
 
 module.exports = {
-  devtool: 'cheap-module-eval-source-map',
+  devtool: 'cheap-module-source-map',
 
   context: path.resolve(__dirname, '..'),
   node: {
@@ -33,7 +33,6 @@ module.exports = {
         test: /\.(js|jsx)$/,
         exclude: /node_modules/,
         use: [
-          'react-hot-loader',
           {
             loader: 'babel-loader',
             options: {
